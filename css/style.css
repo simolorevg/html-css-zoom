@@ -35,6 +35,11 @@ body{
     width:var(--width-small);
 }
 
+/*color*/
+.green{
+    color:green;
+}
+
 /*FLEXBOX*/
 .flexcol{
     display:flex;
@@ -66,6 +71,8 @@ body{
     height: 100vh;
     background-color: #222222;
 }
+
+
 
 /*MEETING SECTION*/
 .top-settings{
@@ -154,6 +161,14 @@ a{
 .actions{
     width: calc(100% - calc(var(--width-mic-video-buttons) - var(--width-stopmeeting-button)));
     height: 100%;
+}
+
+.actions a{
+    margin:0 20px;
+}
+
+.subtitle-action{
+    font-size: 0.7em;
 }
 
 .stopmeeting{
