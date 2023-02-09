@@ -4,6 +4,8 @@
     --height-top-settings:5vh;
     --height-webacams: 15vh;
     --width-webcams:25vh;
+    --width-user-name:40%;
+    --height-user-name:20%;
 }
 
 
@@ -33,7 +35,11 @@
     align-items: flex-start;
 }
 
-
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*WRAPPER*/
 .wrapper{
@@ -43,10 +49,6 @@
 }
 
 /*MEETING SECTION*/
-.camera-section{
-    height:calc(100% - var(--height-buttons));
-}
-
 .top-settings{
     width:100%;
     height: var(--height-top-settings);
@@ -54,6 +56,13 @@
     /*debug*/
     background-color: green;
 }
+
+.camera-section{
+    height:calc(100% - var(--height-buttons));
+}
+
+
+/*WEBCAM*/
 
 .webcam-box{
     width:100%;
@@ -68,9 +77,7 @@
     width: var(--width-webcams);
     height:var(--height-webacams);
     margin-right:10px;
-    position:relative;
-
-
+    position: relative;
     background-image: url("https://picsum.photos/246/146");
     background-size: cover;
     background-position: center;
@@ -79,6 +86,18 @@
     border: 1px solid black;
 }
 
+.user-name{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:var(--width-user-name);
+    height: var(--height-user-name);
+    background-color: rgba(105, 105, 105, 0.7);
+    color:white;
+}
+
+
+/*BUTTONS*/
 .buttons{
     height: var(--height-buttons);
     /*debug*/
