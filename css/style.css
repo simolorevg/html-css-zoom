@@ -1,8 +1,8 @@
 /*VARIABLES*/
 :root{
     --height-buttons:10vh;
-    --height-top-settings:10vh;
-    --height-webacams: 20vh;
+    --height-top-settings:5vh;
+    --height-webacams: 15vh;
     --width-webcams:25vh;
 }
 
@@ -45,9 +45,6 @@
 /*MEETING SECTION*/
 .camera-section{
     height:calc(100% - var(--height-buttons));
-
-    /*debug*/
-    background-color: yellow;
 }
 
 .top-settings{
@@ -71,6 +68,12 @@
     width: var(--width-webcams);
     height:var(--height-webacams);
     margin-right:10px;
+    position:relative;
+
+
+    background-image: url("https://picsum.photos/246/146");
+    background-size: cover;
+    background-position: center;
 
     /*debug*/
     border: 1px solid black;
