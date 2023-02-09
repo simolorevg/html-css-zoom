@@ -162,7 +162,6 @@ a{
 .stopmeeting{
     width:var(--width-stopmeeting-button);
     height:100%;
-
-    /*debug*/
-    background-color: blueviolet;
+    color:red;
+    background-color: #4a4a4a;
 }
