@@ -9,6 +9,8 @@
     --width-user-name:40%;
     --height-user-name:20%;
     --width-small:20px;
+    --width-mic-video-buttons:15%;
+    --width-stopmeeting-button:15%;
 }
 
 
@@ -23,6 +25,10 @@
 .container{
     width:98%;
     margin:0 auto;
+}
+
+body{
+    color:white;
 }
 
 .small{
@@ -110,9 +116,6 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /*debug*/
-    border: 1px solid black;
 }
 
 .user-name{
@@ -128,6 +131,38 @@ a{
 
 /*FOOTER BUTTONS*/
 .buttons{
+    display:flex;
     height: var(--height-buttons);
     background-color:#222222;
+    font-size:1.5em;
+}
+
+.mic-video-buttons{
+    height:100%;
+    width:var(--width-mic-video-buttons);
+}
+
+.video{
+    margin-right:20px;
+}
+
+.microphone{
+    margin:0 20px;
+}
+
+
+.actions{
+    width: calc(100% - calc(var(--width-mic-video-buttons) - var(--width-stopmeeting-button)));
+    height: 100%;
+    
+    /*debug*/
+    background-color: aqua;
+}
+
+.stopmeeting{
+    width:var(--width-stopmeeting-button);
+    height:100%;
+
+    /*debug*/
+    background-color: blueviolet;
 }
