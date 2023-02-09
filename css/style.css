@@ -2,10 +2,13 @@
 :root{
     --height-buttons:10vh;
     --height-top-settings:5vh;
+    --height-top-button:30px;
+    --width-top-button:6em;
     --height-webacams: 15vh;
     --width-webcams:25vh;
     --width-user-name:40%;
     --height-user-name:20%;
+    --width-small:20px;
 }
 
 
@@ -20,6 +23,10 @@
 .container{
     width:95%;
     margin:0 auto;
+}
+
+.small{
+    width:var(--width-small);
 }
 
 /*FLEXBOX*/
@@ -41,6 +48,12 @@
     align-items: center;
 }
 
+.flex-end{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /*WRAPPER*/
 .wrapper{
     width:100%;
@@ -52,10 +65,27 @@
 .top-settings{
     width:100%;
     height: var(--height-top-settings);
-
-    /*debug*/
-    background-color: green;
+    color:white;
+    font-size:1.2em;
+    background-color: black;
 }
+
+a{
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    display:inline;
+}
+
+.top-button{
+    width: var(--width-top-button);
+    height: var(--height-top-button);
+    margin:10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightslategray;
+}
+
 
 .camera-section{
     height:calc(100% - var(--height-buttons));
@@ -68,9 +98,7 @@
     width:100%;
     height: calc(100% - var(--height-top-settings));
     padding:40px;
-
-    /*debug*/
-    background-color: coral;
+    background-color: black;
 }
 
 .col{
