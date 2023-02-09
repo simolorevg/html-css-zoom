@@ -21,7 +21,7 @@
 
 /*COMMON*/
 .container{
-    width:95%;
+    width:98%;
     margin:0 auto;
 }
 
@@ -109,6 +109,7 @@ a{
     background-image: url("https://picsum.photos/246/146");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     /*debug*/
     border: 1px solid black;
@@ -125,9 +126,8 @@ a{
 }
 
 
-/*BUTTONS*/
+/*FOOTER BUTTONS*/
 .buttons{
     height: var(--height-buttons);
-    /*debug*/
-    background-color: red;
+    background-color:#222222;
 }
