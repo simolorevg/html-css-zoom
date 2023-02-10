@@ -29,6 +29,7 @@
 
 body{
     color:white;
+    font-family:sans-serif;
 }
 
 .small{
@@ -132,6 +133,7 @@ a{
     width:var(--width-user-name);
     height: var(--height-user-name);
     background-color: rgba(105, 105, 105, 0.7);
+    font-size: 0.8em;
     color:white;
 }
 
